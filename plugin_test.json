@@ -1,3 +1,6 @@
 {
-    "plugin_name": "HI"
+    "source_name": "Default Plugins",
+    "plugins": [
+        "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/test_plugin.gd"
+    ]
 }
