@@ -17,7 +17,7 @@ func make_example_config(file, type):
 			var default_data = {
 				"goodbye_msg": ""
 			}
-			var err = file.open(PLUGINS_ENABLED_PATH, File.WRITE)
+			var err = file.open(CONFIG_GOODBYEMSG_PATH, File.WRITE)
 			if err != OK:
 				return false
 			file.store_string(JSON.print(default_data, "\t"))
