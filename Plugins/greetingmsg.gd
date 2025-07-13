@@ -15,7 +15,7 @@ func make_example_config(file, type):
 	match type:
 		"GREETING_MSG":
 			var default_data = {
-				"greeting_msg": ""
+				"greeting_msg": "$PLAYER, this is the example greeting message! Go change it, i don't like it >:c"
 			}
 			var err = file.open(CONFIG_GREETINGMSG_PATH, File.WRITE)
 			if err != OK:
