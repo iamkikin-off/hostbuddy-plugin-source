@@ -1,0 +1,14 @@
+{
+	"source_name": "Default Plugins",
+	"plugins": {
+		"GreetingMSG": {
+			"code": "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/greetingmsg.gd"
+		},
+    "GoodbyeMSG": {
+			"code": "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/goodbyemsg.gd"
+		},
+    "AutoMSG": {
+			"code": "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/automsg.gd"
+		},
+	}
+}
