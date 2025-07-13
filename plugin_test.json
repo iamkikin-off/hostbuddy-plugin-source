@@ -1,8 +1,0 @@
-{
-	"source_name": "Default Plugins",
-	"plugins": {
-		"HelloWorld": {
-			"code": "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/test_plugin.gd"
-		}
-	}
-}
