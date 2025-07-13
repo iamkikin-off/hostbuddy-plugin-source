@@ -20,7 +20,7 @@ func make_example_config(file, type):
 				"time": 5,
 				"messages": []
 			}
-			var err = file.open(PLUGINS_ENABLED_PATH, File.WRITE)
+			var err = file.open(CONFIG_AUTOMSG_PATH, File.WRITE)
 			if err != OK:
 				return false
 			file.store_string(JSON.print(default_data, "\t"))
