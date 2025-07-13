@@ -18,7 +18,7 @@ func make_example_config(file, type):
 		"AUTOMSG":
 			var default_data = {
 				"time": 5,
-				"messages": []
+				"messages": [">:c",">:)"]
 			}
 			var err = file.open(CONFIG_AUTOMSG_PATH, File.WRITE)
 			if err != OK:
