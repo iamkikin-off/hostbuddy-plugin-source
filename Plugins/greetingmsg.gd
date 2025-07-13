@@ -48,6 +48,7 @@ func _ready():
 	Players = get_node_or_null("/root/ToesSocks/Players")
 	Chat = get_node_or_null("/root/ToesSocks/Chat")
 	Players.connect("player_added", self, "_player_added")
+	load_config()
 # -----------------------------------------------------------------------
 func _player_added(player):
 	config_greeting_msg = config_greeting_msg.replace("$PLAYER", Players.get_username(player))
