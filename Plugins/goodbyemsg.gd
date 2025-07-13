@@ -15,7 +15,7 @@ func make_example_config(file, type):
 	match type:
 		"GOODBYE_MSG":
 			var default_data = {
-				"goodbye_msg": ""
+				"goodbye_msg": "$PLAYER, why did you leave us?"
 			}
 			var err = file.open(CONFIG_GOODBYEMSG_PATH, File.WRITE)
 			if err != OK:
