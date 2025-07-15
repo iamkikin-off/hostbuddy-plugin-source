@@ -51,6 +51,7 @@ func _ready():
 	load_config()
 # -----------------------------------------------------------------------
 func _player_removed(player):
-	config_goodbye_msg = config_goodbye_msg.replace("$PLAYER", Players.get_username(player))
-	Chat.send_raw(config_goodbye_msg, "grey", false)
+	var final_msg = config_goodbye_msg
+	final_msg = config_goodbye_msg.replace("$PLAYER", Players.get_username(player))
+	Chat.send_raw(final_msg, "grey", false)
 # -----------------------------------------------------------------------
