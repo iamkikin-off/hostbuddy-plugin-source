@@ -45,14 +45,18 @@ func load_config():
 	return true
 # -----------------------------------------------------------------------
 func _ready():
+	load_config()
 	Players = get_node_or_null("/root/ToesSocks/Players")
 	Chat = get_node_or_null("/root/ToesSocks/Chat")
 	Players.connect("player_added", self, "_player_added")
-	load_config()
 # -----------------------------------------------------------------------
 func _player_added(player):
 	print(str(player) + " has joined the game")
 	print("username: " + str(Players.get_username(player)))
-	config_greeting_msg = config_greeting_msg.replace("$PLAYER", Players.get_username(player))
-	Chat.send_raw(config_greeting_msg, "grey", false)
+	print(config_greeting_msg)
+	var final_msg = config_greeting_msg
+	final_msg = config_greeting_msg.replace("$PLAYER", Players.get_username(player))
+	print(config_greeting_msg)
+	print(final_msg)
+	Chat.send_raw(final_msg, "grey", false)
 # -----------------------------------------------------------------------
