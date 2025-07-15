@@ -51,6 +51,8 @@ func _ready():
 	load_config()
 # -----------------------------------------------------------------------
 func _player_added(player):
+	print(str(player) + " has joined the game")
+	print("username: " + str(Players.get_username(player)))
 	config_greeting_msg = config_greeting_msg.replace("$PLAYER", Players.get_username(player))
 	Chat.send_raw(config_greeting_msg, "grey", false)
 # -----------------------------------------------------------------------
