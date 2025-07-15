@@ -51,9 +51,6 @@ func _ready():
 	Players.connect("player_added", self, "_player_added")
 # -----------------------------------------------------------------------
 func _player_added(player):
-	print(str(player) + " has joined the game")
-	print("username: " + str(Players.get_username(player)))
-	print(config_greeting_msg)
 	var final_msg = config_greeting_msg
 	final_msg = config_greeting_msg.replace("$PLAYER", Players.get_username(player))
 	print(config_greeting_msg)
