@@ -4,11 +4,14 @@
 		"GreetingMSG": {
 			"code": "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/greetingmsg.gd"
 		},
-    "GoodbyeMSG": {
+	    "GoodbyeMSG": {
 			"code": "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/goodbyemsg.gd"
 		},
-    "AutoMSG": {
+	    "AutoMSG": {
 			"code": "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/automsg.gd"
+		},
+		"Rain": {
+			"code": "https://raw.githubusercontent.com/iamkikin-off/hostbuddy-plugin-source/refs/heads/main/Plugins/rain.gd"
 		},
 	}
 }
